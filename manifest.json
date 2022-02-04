@@ -1,0 +1,24 @@
+{
+    "manifest_version" :2,
+    "version": "1",
+    "name": "Chrome-ScrollBar-Remover",
+    "description":" This Extension is going to remove the vertical and the horizontal scrollbar of Chrome so the viewing of any website is going to be nicer ;)",
+    "author": "Mohamad Naser Alnakeshand",
+    "icons":{
+        "16":"icon.png",
+        "48":"icon.png",
+        "128":"icon.png"
+    },
+    "page_action":{
+        "default_icon":{
+            "16":"icon.png",
+            "48":"icon.png",
+            "128":"icon.png"
+        }
+    },
+    "content_scripts":[{
+        "matches":["<all_urls>"],
+        "js":["app.js"]
+        
+    }]
+}
